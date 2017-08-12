@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1><img src="../assets/emFund-logo2.png" alt="emFund"> Helping you through disasters</h1>
+                    <h1><img src="assets/emFund-logo2.png" alt="emFund"> Helping you through disasters</h1>
                     <hr>
                 </div>
             </div>
@@ -25,7 +25,15 @@
                         few short questions.
                     </h3>
 
-                    <form>
+                    <form class="form-group">
+                        <label for="sel1">Select an account you would like
+                            funds to go to</label>
+                        <select class="form-control" id="sel1">
+                            {%for item in accounts%}
+                                <option>{{item}}</option>
+                            {%endfor%}
+
+                        </select>
 
                     </form>
                 </div>
