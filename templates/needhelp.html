@@ -26,14 +26,34 @@
                     </h3>
 
                     <form class="form-group">
+
                         <label for="sel1">Select an account you would like
                             funds to go to</label>
                         <select class="form-control" id="sel1">
                             {%for item in accounts%}
                                 <option>{{item}}</option>
                             {%endfor%}
-
                         </select>
+
+                        <label for="textarea">
+                            What would you like to tell your friends?
+                        </label>
+                        <textarea class="form-control" rows=3
+                                  id="textarea"></textarea>
+
+                        <label for="media">Where would you like to post?</label>
+                        <div class="checkbox">
+                            <label><input type="checkbox"
+                                          value="" disabled>Facebook</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""
+                                                          disable>Twitter</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"
+                                          disabled>LinkedIn</label>
+                        </div>
 
                     </form>
                 </div>

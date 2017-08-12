@@ -8,8 +8,12 @@ def load_template():
 
     return env.get_template('indanger.html')
 
+def get_page_info():
+
+
 def main():
     template = load_template()
+    page_info = get_page_info()
     webpage = template.render()
 
     with open("indanger.html", "w") as f:
