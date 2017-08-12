@@ -9,7 +9,15 @@ def load_template():
 
     return env.get_template('friendindanger.html')
 
+def main():
+    template = load_template()
+    webpage = template.render()
+
+
+    with open("friendindanger.html", "w") as f:
+        f.write(webpage)
+
 
 
 if __name__ == "__main__":
-    template = load_template()
+    main()
