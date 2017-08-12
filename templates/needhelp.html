@@ -18,18 +18,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-8 col-lg-offset-2">
                     <h3>
                         We're going to create a small funding page for you to
                         send to your friend networks, but we need to ask you a
                         few short questions.
                     </h3>
-
+                    <em>
                     <form class="form-group">
 
-                        <label for="sel1">Select an account you would like
+                        <label for="bankselect">Select an account you would like
                             funds to go to</label>
-                        <select class="form-control" id="sel1">
+                        <select class="form-control" id="bankselect">
                             {%for item in accounts%}
                                 <option>{{item}}</option>
                             {%endfor%}

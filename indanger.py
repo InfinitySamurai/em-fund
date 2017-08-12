@@ -9,7 +9,7 @@ def load_template():
     return env.get_template('indanger.html')
 
 def get_page_info():
-
+    return "fake"
 
 def main():
     template = load_template()
